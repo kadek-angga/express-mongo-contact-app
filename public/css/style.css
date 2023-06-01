@@ -1,0 +1,27 @@
+Set the background color of the body body {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Customize the navbar */
+/* .navbar {
+  background-color: #222;
+} */
+
+/* Customize buttons */
+/* .btn {
+  background-color: #555;
+  border-color: #555;
+  color: #fff;
+} */
+
+/* Customize form inputs */
+/* .form-control {
+  background-color: #222;
+  color: #fff;
+} */
+
+/* Customize links */
+a {
+  color: #fff;
+}
