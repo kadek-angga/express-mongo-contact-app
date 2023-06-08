@@ -13,6 +13,14 @@ const Contact = mongoose.model("Contact", {
   email: {
     type: String,
   },
+  createdAt: {
+    type: Date,
+    default: new Date().toISOString(),
+  },
+  updateAt: {
+    type: Date,
+    default: new Date().toISOString(),
+  },
 });
 
 module.exports = Contact;

@@ -84,13 +84,15 @@ const updateContact = async (req, res) => {
     check("email", "Email is Invalid!").isEmail();
     check("phone_number", "Phone number is invalid").isMobilePhone("id-ID");
 
-    Contact.updateOne(
+    // const updateAt = new Date().toISOString();
+    await Contact.updateOne(
       { _id: req.body._id },
       {
         $set: {
           name: req.body.name,
           phone_number: req.body.phone_number,
           email: req.body.email,
+          updateAt: new Date().toISOString(),
         },
       }
     );
